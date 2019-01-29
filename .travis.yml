@@ -22,7 +22,6 @@ install:
   - ./.ci/install.sh
 
 script:
-  - python patch.py
   - chmod +x .ci/run.sh
   - ./.ci/run.sh || True
   - cat ${CONAN_LOGGING_FILE}
